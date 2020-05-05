@@ -8,10 +8,23 @@ package cn.itcast.day05.demo01;
 如果是布尔类型,那么默认为false;
 如果是引用类型,那么默认为null;
 
-注意事项
+注意事项：
+静态初始化其实也有默认值的过程,只不过系统自动马上将默认值替换成为了大括号当中的具体数值
  */
 public class Demo05ArrayUse {
     public static void main(String[] args) {
+         int[] array = new int[3];
 
+        System.out.println(array);//内存地址值
+        System.out.println(array[0]);//0
+        System.out.println(array[1]);//0
+        System.out.println(array[2]);//0
+
+        System.out.println("============");
+
+        array[1] = 123;
+        System.out.println(array[0]);//0
+        System.out.println(array[1]);//123
+        System.out.println(array[2]);//0
     }
 }
