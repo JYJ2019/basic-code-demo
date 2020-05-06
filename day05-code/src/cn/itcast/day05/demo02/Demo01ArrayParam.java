@@ -21,6 +21,7 @@ public class Demo01ArrayParam {
         for (int i = 0; i < array.length; i++) {
             System.out.println(array[i]);
         }
+        System.out.println(array);//传进来的是地址值
     }
 
 }
