@@ -24,9 +24,6 @@ public class Demo01PrintArray {
 
         System.out.println("=============================");
 
-
-
-
         //使用面向过程
         //找一个JDK给我们提供好的Arrays类
         //其中有一个toString方法,直接就能把数组变成想要的格式的字符串
