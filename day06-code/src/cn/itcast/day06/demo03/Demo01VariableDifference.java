@@ -24,5 +24,23 @@ package cn.itcast.day06.demo03;
 成员变量:随着对象创建而诞生,随着对象被垃圾回收而消失
  */
 public class Demo01VariableDifference {
+    String name;//成员变量
+
+
+    public void methodA() {
+        int num = 20;//局部变量
+        System.out.println(num);//错误写法,没有给默认值
+        System.out.println(name);//可以打印有默认值
+    }
+    public void methodB(int param) { //方法的参数也是局部变量
+        //参数在方法调用的时候,必然会被赋值的.
+        System.out.println(param);
+
+        int age;//局部变量
+        //System.out.println(age);//没赋值不能用
+        //System.out.println(num);//错误写法!(局部变量的生命周期)
+        System.out.println(name);//成员变量的生命周期
+    }
+
 
 }
