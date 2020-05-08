@@ -43,7 +43,7 @@ public class Demo02Student {
         System.out.println(stu.name);
         System.out.println(stu.age);
         System.out.println("======================");
-
+        stu.name.toString();
         //4.使用对象的成员方法,格式:
         //对象名.成员方法名()
         stu.eat();
