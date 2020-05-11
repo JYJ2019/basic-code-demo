@@ -42,7 +42,9 @@ public class Demo04ArrayListReturn {
         }
     }
 
+    //这个方法,接收大集合参数,返回小集合结果
     public static ArrayList<Integer> getSmallList(ArrayList<Integer> listBig) {
+        //创建一个小集合,用来装偶数结果
         ArrayList<Integer> listSmall = new ArrayList<>();
         for (int i = 0; i < 20; i++) {
             int num = listBig.get(i);
