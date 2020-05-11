@@ -29,13 +29,15 @@ public class Demo04ArrayListReturn {
         cycle(listBig,r);
 
         ArrayList<Integer> listSmall = getSmallList(listBig);
-        System.out.println(listSmall);
+//        System.out.println(listSmall);
+        System.out.println("偶数总共有多少个:" + listSmall.size());
+        cycle(listSmall);
 
     }
 
     public static void cycle(ArrayList<Integer> listBig, Random r) {
         for (int i = 0; i < 20; i++) {
-            int num = r.nextInt();
+            int num = r.nextInt(100) + 1;//1~100
             listBig.add(num);
         }
     }
@@ -49,6 +51,12 @@ public class Demo04ArrayListReturn {
             }
         }
         return listSmall;
+    }
+
+    public static void cycle(ArrayList<Integer> listSmall) {
+        for (int i = 0; i < listSmall.size(); i++) {
+            System.out.println(listSmall.get(i));
+        }
     }
 
 }
